@@ -52,7 +52,7 @@ public class IsvInfoExServiceImpl{
 	private IUserExClient userExClient;
 	@Reference
 	private IUserService ucUserService;
-	@Reference
+	@Reference(timeout = 10000)
 	private IAgentRpcApi agentRpcApi;
 
 	@Autowired

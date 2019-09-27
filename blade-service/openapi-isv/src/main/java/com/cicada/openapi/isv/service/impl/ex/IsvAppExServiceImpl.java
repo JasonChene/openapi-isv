@@ -53,7 +53,6 @@ public class IsvAppExServiceImpl {
 		Map<String, Object> condition = Maps.newHashMap();
 		condition.put("user_id", isvApp.getIsvUserId().longValue());
 		condition.put("is_deleted", 0);
-		condition.put("status", 0);
 
 		int count = isvInfoService.count(Wrappers.<IsvInfo>query().allEq(condition));
 
